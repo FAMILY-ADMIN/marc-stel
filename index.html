@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Marc Eugène Stel</title>
+<meta name="description" content="Obsèques de Marc Eugène Stel — lundi 2 novembre 2026">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Source+Sans+3:wght@400;500;600&display=swap">
+<style>
+:root {
+  --bg: #f7f5f1; --surface: #fffdf9; --fg: #2a2723; --muted: #6f6a63;
+  --line: #e2ddd5; --accent: #4a5a52; --accent-fg: #fffdf9;
+  --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --sans: "Source Sans 3", -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1a1a18; --surface: #22221f; --fg: #ebe7e0; --muted: #a39d94;
+    --line: #36352f; --accent: #a9bdb2; --accent-fg: #1a1a18; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--sans);
+  font-size: 17px; line-height: 1.55; }
+.wrap { max-width: 640px; margin: 0 auto;
+  padding: 48px max(18px, env(safe-area-inset-right)) 64px max(18px, env(safe-area-inset-left)); }
+
+/* En-tête */
+header { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 18px; }
+.portrait { width: 168px; height: 168px; border-radius: 50%; overflow: hidden;
+  background: var(--line); display: grid; place-items: center; border: 1px solid var(--line); }
+.portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.portrait .initials { font-family: var(--serif); font-size: 3.2rem; color: var(--muted); }
+h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(2.2rem, 8vw, 3rem);
+  line-height: 1.1; margin: 0; letter-spacing: .01em; }
+.dates { color: var(--muted); margin: -8px 0 0; font-size: 1rem; }
+.rule { width: 48px; height: 1px; background: var(--line); border: 0; margin: 8px auto; }
+
+/* Faire-part */
+.notice { text-align: center; font-family: var(--serif); font-size: 1.28rem; line-height: 1.5;
+  margin: 36px 0 0; }
+.notice p { margin: 0 0 14px; }
+.notice .family span { display: block; }
+.notice .name { font-size: 1.5rem; font-weight: 500; }
+
+/* Sections */
+section { margin-top: 48px; }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 1.7rem; margin: 0 0 6px; text-align: center; }
+.sub { text-align: center; color: var(--muted); margin: 0 0 24px; }
+
+/* Programme */
+.steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.step { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 18px 16px;
+  display: grid; grid-template-columns: 74px 1fr; gap: 4px 14px; }
+.time { font-family: var(--serif); font-size: 1.55rem; font-weight: 500; line-height: 1.1;
+  grid-row: span 3; font-variant-numeric: tabular-nums; }
+.time small { display: block; font-family: var(--sans); font-size: .78rem; color: var(--muted); font-weight: 400; margin-top: 4px; }
+.what { font-weight: 600; font-size: 1.05rem; }
+.where { color: var(--fg); }
+.where .addr { color: var(--muted); display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.btn { display: inline-flex; align-items: center; gap: 6px; font: inherit; font-size: .9rem; font-weight: 500;
+  text-decoration: none; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px;
+  padding: 6px 14px; background: transparent; cursor: pointer; min-height: 36px; }
+.btn.solid { background: var(--accent); color: var(--accent-fg); }
+.access { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+.access div { border-top: 1px dashed var(--line); padding-top: 10px; }
+.access b { font-weight: 600; }
+.note { font-size: .92rem; color: var(--muted); }
+
+/* Contacts */
+.contacts { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.contact { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px;
+  display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
+.contact .who { font-weight: 600; }
+.cal { text-align: center; margin-top: 22px; }
+
+footer { margin-top: 56px; text-align: center; color: var(--muted); font-size: .9rem; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 380px) { .step { grid-template-columns: 1fr; } .time { grid-row: auto; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <!-- PHOTO : placer un fichier "marc.jpg" à côté de ce fichier (ou envoyer la photo pour l'intégrer) -->
+    <div class="portrait">
+      <img src="marc.jpg" alt="Marc Eugène Stel" onerror="this.remove(); document.getElementById('ini').hidden=false;">
+      <span class="initials" id="ini" hidden>MS</span>
+    </div>
+    <h1>Marc Eugène Stel</h1>
+    <p class="dates">† 21 octobre 2026 · 81 ans</p>
+  </header>
+
+  <div class="notice">
+    <p class="family">
+      <span>Geneviève Stel, née Monnier, son épouse,</span>
+      <span>Nathalie Stel et Alexis Synodinos,</span>
+      <span>Benjamin Stel et Michelle Andrade Machado,</span>
+      <span>ses enfants et leurs conjoints,</span>
+      <span>Antinéa, Hermès, Hélios et Barnabé, ses petits-enfants,</span>
+    </p>
+    <p>ont la tristesse de vous faire part du décès de</p>
+    <p class="name">Monsieur Marc Eugène Stel</p>
+    <p>survenu le 21 octobre 2026 à Eaubonne, à l'âge de 81 ans.</p>
+  </div>
+
+  <section aria-labelledby="prog">
+    <h2 id="prog">Obsèques</h2>
+    <p class="sub">Lundi 2 novembre 2026</p>
+
+    <ol class="steps">
+      <li class="step">
+        <div class="time">9h30</div>
+        <div class="what">Levée du corps</div>
+        <div class="where">Chambre funéraire de l'hôpital Simone Veil
+          <span class="addr">14, rue de Saint-Prix, 95600 Eaubonne</span></div>
+        <div class="actions">
+          <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=14%20rue%20de%20Saint-Prix%2095600%20Eaubonne">Itinéraire</a>
+          <a class="btn" target="_blank" rel="noopener" href="https://waze.com/ul?q=14%20rue%20de%20Saint-Prix%2095600%20Eaubonne&navigate=yes">Waze</a>
+        </div>
+      </li>
+
+      <li class="step">
+        <div class="time">11h00</div>
+        <div class="what">Crémation</div>
+        <div class="where">Crématorium de Saint-Ouen-l'Aumône
+          <span class="addr">35, avenue de Verdun, 95310 Saint-Ouen-l'Aumône</span></div>
+        <div class="actions">
+          <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=35%20avenue%20de%20Verdun%2095310%20Saint-Ouen-l%27Aum%C3%B4ne">Itinéraire</a>
+          <a class="btn" target="_blank" rel="noopener" href="https://waze.com/ul?q=35%20avenue%20de%20Verdun%2095310%20Saint-Ouen-l%27Aum%C3%B4ne&navigate=yes">Waze</a>
+        </div>
+      </li>
+
+      <li class="step">
+        <div class="time">Après<small>la crémation</small></div>
+        <div class="what">Nous nous réunirons à la maison</div>
+        <div class="where"><span class="addr">L'adresse vous est communiquée par la famille.</span></div>
+      </li>
+
+      <li class="step">
+        <div class="time">16h30</div>
+        <div class="what">Inhumation de l'urne</div>
+        <div class="where">Cimetière de Deuil-la-Barre</div>
+        <div class="access">
+          <div>
+            <b>Accès principal</b> — rue Cauchois<br>
+            <span class="note">Parking dédié</span>
+            <div class="actions">
+              <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Cimeti%C3%A8re%20rue%20Cauchois%2095170%20Deuil-la-Barre">Itinéraire</a>
+              <a class="btn" target="_blank" rel="noopener" href="https://waze.com/ul?q=Cimeti%C3%A8re%20rue%20Cauchois%2095170%20Deuil-la-Barre&navigate=yes">Waze</a>
+            </div>
+          </div>
+          <div>
+            <b>Accès secondaire</b> — rue des Mathouzines<br>
+            <span class="note">Plus proche de la sépulture · stationnement dans la rue</span>
+            <div class="actions">
+              <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Rue%20des%20Mathouzines%2095170%20Deuil-la-Barre">Itinéraire</a>
+              <a class="btn" target="_blank" rel="noopener" href="https://waze.com/ul?q=Rue%20des%20Mathouzines%2095170%20Deuil-la-Barre&navigate=yes">Waze</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ol>
+
+    <div class="cal"><button class="btn solid" id="ics" type="button">Ajouter à mon agenda</button></div>
+  </section>
+
+
+  <footer>Merci de transmettre ce lien à celles et ceux qui l'ont connu.</footer>
+</div>
+
+<script>
+document.getElementById("ics").addEventListener("click", function () {
+  var ev = [
+    ["Levée du corps — Marc Stel", "20261102T083000Z", "20261102T091500Z", "Chambre funéraire, hôpital Simone Veil, 14 rue de Saint-Prix, 95600 Eaubonne"],
+    ["Crémation — Marc Stel", "20261102T100000Z", "20261102T110000Z", "Crématorium, 35 avenue de Verdun, 95310 Saint-Ouen-l'Aumône"],
+    ["Inhumation de l'urne — Marc Stel", "20261102T153000Z", "20261102T161500Z", "Cimetière de Deuil-la-Barre, rue Cauchois, 95170 Deuil-la-Barre"]
+  ];
+  var esc = function (s) { return s.replace(/\\/g, "\\\\").replace(/,/g, "\\,").replace(/;/g, "\\;"); };
+  var lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Obseques Marc Stel//FR", "CALSCALE:GREGORIAN"];
+  ev.forEach(function (e, i) {
+    lines.push("BEGIN:VEVENT", "UID:marc-stel-" + i + "@obseques", "DTSTAMP:20261026T000000Z",
+      "DTSTART:" + e[1], "DTEND:" + e[2], "SUMMARY:" + esc(e[0]), "LOCATION:" + esc(e[3]), "END:VEVENT");
+  });
+  lines.push("END:VCALENDAR");
+  var blob = new Blob([lines.join("\r\n")], { type: "text/calendar;charset=utf-8" });
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = "obseques-marc-stel.ics";
+  document.body.appendChild(a); a.click();
+  setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+});
+</script>
+</body>
+</html>
